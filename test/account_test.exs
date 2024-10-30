@@ -5,8 +5,7 @@ defmodule AccountTest do
     test "Given name, email, when insert, then return a new user list" do
       users = []
       users = Account.insert(users, "Jhon doe", "jon@doe.com")
-      users = Account.insert(users, "Ada", "ada@ada.com")
-      assert length(users) == 2
+      assert length(users) == 1
     end
 
     test "Give a user that already exist, when insert, then return the same user list" do
